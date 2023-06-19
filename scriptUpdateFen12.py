@@ -34,7 +34,7 @@ if __name__ == '__main__':
         elif ans.upper() == 'Y':
             mainDataDir = args.mainDataDir if args.mainDataDir else "/AtlasDisk/user/tilefen/FENICS2/"
 
-            FENICS2 = FATL.fen2_data_extractor(mainDataDir, os.listdir(mainDataDir))
+            FENICS2 = FATL.fen2_data_extractor(mainDataDir)
             saveLocation = args.saveLocation if args.saveLocation else '/AtlasDisk/home2/sisaid/data/FENICS2_data.json'
             FENICS2.to_json(saveLocation)
 
